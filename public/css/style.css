@@ -1,5 +1,5 @@
 #slideshow img{
-margin-top: -20%;
+    margin-top: -20%;
 }
 
 #slideshow .bx-viewport{
@@ -53,6 +53,52 @@ header {
     text-align: center;
 }
 
+p {
+    color: #ababab;
+}
+
+footer {
+    background-color: #222222;
+}
+
+footer .container-fluid {
+    background-color: #1b1b1b;
+    text-align: center;
+    border-top: 1px solid #ababab;
+    margin-top: 20px;
+}
+
+footer .container-fluid p {
+    margin: 10px 0;
+}
+
 h1, h2, h3 {
     color: #2fb9b0;
+}
+
+.center {
+    text-align: center;
+}
+
+.menus .caption p{
+    min-height: 40px;
+    vertical-align: middle;
+}
+
+.center .caption a.btn {
+    background-color: #2fb9b0;
+    border: none;
+}
+
+.center .caption a.btn:hover {
+    box-shadow: inset 0px 3px 30px 0px rgba(50, 50, 50, 0.27);
+}
+
+.recommandations {
+    margin-top: 3%;
+    border-top: 2px solid #ababab;
+}
+
+.recommandations h2 {
+    margin: 25px 0;
 }

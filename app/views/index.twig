@@ -2,6 +2,7 @@
 {% block css %}
     {{ parent() }}
     <link href="/public/js/slider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="/public/js/lightbox/css/lightbox.css" rel="stylesheet" />
 {% endblock %}
 {% block header %}
     <div id="slideshow">
@@ -49,11 +50,76 @@
             <p>Le restaurant example vous accueil pour venir passer un bon moment et vous faire apprécier un excellent repas !</p>
         </div>
     </div>
-{% endblock %}
-{% block javascript %}
+<div class="center">
+    <div class="container menus">
+        {#<h2>Venez découvrir notre carte et nos menus ...</h2>#}
+        <div class="row">
+            <div class="col-md-3">
+                <div class="caption">
+                    <h3>La Carte</h3>
+                    <p>Découvrez en détails tous nos articles</p>
+                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="caption">
+                    <h3>Menu Midi</h3>
+                    <p>Menu uniquement servit le midi</p>
+                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="caption">
+                    <h3>Menu Standard</h3>
+                    <p>Menu comportant Entrée / Plat ou Plat / Dessert</p>
+                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="caption">
+                    <h3>Menu Gourmand</h3>
+                    <p>Menu comportant Entrée / Plat / Dessert</p>
+                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+                </div>
+            </div>
+        </div>
+        <div class="container recommandations">
+            <h2>Laissez vous guider par les recommandations du chef !</h2>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
+                    <div class="caption">
+                        <h3>Steack Frites</h3>
+                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
+                    <div class="caption">
+                        <h3>Steack Frites</h3>
+                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
+                    <div class="caption">
+                        <h3>Steack Frites</h3>
+                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    {% block javascript %}
     {{ parent() }}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/public/js/jquery-1.11.1.min.js"></script>
     <script src="/public/js/slider/jquery.bxslider.min.js"></script>
+    <script src="/public/js/lightbox/js/lightbox.min.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -62,6 +128,9 @@
                 mode: 'fade',
                 controls: false,
                 pager: false
+            });
+            $(".test").colorbox({
+                opacity: 0.5
             });
         });
     </script>
