@@ -1,0 +1,58 @@
+#slideshow img{
+margin-top: -20%;
+}
+
+#slideshow .bx-viewport{
+    max-height: 600px;
+    border: none;
+    margin: 0;
+    left: 0;
+}
+
+#slideshow li {
+    left: 0;
+}
+
+header .navbar{
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+
+header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>li>a, header .navbar-default .navbar-brand, header .dropdown-menu a{
+    color: white;
+    background-color: transparent;
+}
+
+header .navbar-default .navbar-nav>.active>a:hover, header .navbar-default .navbar-nav>li>a:hover, header .navbar-default .navbar-nav>li.dropdown.open>a:hover, header .navbar-default .navbar-nav>li.dropdown.open>a:focus, header .dropdown-menu a:hover, header .navbar-default .navbar-nav>li.dropdown.open>a, header .navbar-default .navbar-brand:hover{
+    background-color: transparent;
+    color: #2fb9b0;
+}
+
+header .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+header {
+    position: relative;
+}
+
+.jumbotron, .jumbotron h1 {
+    background-color: #222222;
+    color: #2fb9b0;
+    text-align: center;
+}
+
+.jumbotron p{
+    color: #ababab;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #2fb9b0;
+}

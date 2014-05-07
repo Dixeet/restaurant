@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Restaurant{% endblock title %}</title>
+    {% block css %}
+        <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/public/css/style.css"/>
+    {% endblock css %}
+</head>
+<body>
+<header>
+    {% block header %}
+    {% endblock header %}
+</header>
+{% block body %}
+{% endblock body %}
+<footer>
+</footer>
+{% block javascript %}
+{% endblock javascript %}
+</body>
+</html>
