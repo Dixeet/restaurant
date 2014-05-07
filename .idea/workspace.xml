@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5448d15-2c1d-4945-a118-e4b791892edc" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Development\restaurant\.idea\vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\Development\restaurant\.idea\workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="restaurant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -354,6 +352,11 @@
       <created>1399385672096</created>
       <updated>1399385672096</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ajout dans le gitignore des fichiers locaux de phpstorm et suppression de ceux ci du repo">
+      <created>1399468472984</created>
+      <updated>1399468472984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -380,6 +383,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2112069" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -412,6 +416,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Ajout dans le gitignore des fichiers locaux de phpstorm et suppression de ceux ci du repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout dans le gitignore des fichiers locaux de phpstorm et suppression de ceux ci du repo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
