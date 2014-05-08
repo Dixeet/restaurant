@@ -19,8 +19,16 @@ class HomeController extends BaseController {
 	public function showWelcome()
 	{
         $jumbotrons = Info::where('name', '=', 'jumbotron')->get();
+        $recommandations = Recommandation::with('plat')->get();
+        $menus = Menu::all();
+//        App::after(function($request, $response)
+//        {
+//            $queries = DB::getQueryLog();
+//        });
 		return View::make('index', array(
-            'jumbotrons' => $jumbotrons
+            'jumbotrons' => $jumbotrons,
+            'recommandations' => $recommandations,
+            'menus' => $menus
         ));
 	}
 

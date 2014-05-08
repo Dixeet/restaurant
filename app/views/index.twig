@@ -10,8 +10,6 @@
             {% for jumbotron in jumbotrons %}
                 <li><img src="{{ jumbotron.data }}" /></li>
             {% endfor %}
-            {#<li><img src="/public/images/01.jpg" /></li>#}
-            {#<li><img src="/public/images/02.jpg" /></li>#}
         </ul>
     </div>
     <nav class="navbar navbar-default" role="navigation">
@@ -30,14 +28,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
+                    <li><a href="#">La Carte</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nos Menus <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            {% for menu in menus %}
+                                <li><a href="#">{{ menu.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
                 </ul>
@@ -64,57 +62,29 @@
                     <a href="#" class="btn btn-primary" role="button">Découvrir</a>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="caption">
-                    <h3>Menu Midi</h3>
-                    <p>Menu uniquement servit le midi</p>
-                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+            {% for menu in menus %}
+                <div class="col-md-3">
+                    <div class="caption">
+                        <h3>{{ menu.name }}</h3>
+                        <p>{{ menu.description }}</p>
+                        <a href="#" class="btn btn-primary" role="button">Découvrir</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="caption">
-                    <h3>Menu Standard</h3>
-                    <p>Menu comportant Entrée / Plat ou Plat / Dessert</p>
-                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="caption">
-                    <h3>Menu Gourmand</h3>
-                    <p>Menu comportant Entrée / Plat / Dessert</p>
-                    <a href="#" class="btn btn-primary" role="button">Découvrir</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         <div class="container recommandations">
             <h2>Laissez vous guider par les recommandations du chef !</h2>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
-                    <div class="caption">
-                        <h3>Steack Frites</h3>
-                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
+            {% for recommandation in recommandations %}
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a data-lightbox="recommandations" data-title="{{ recommandation.plat.name }}" href="{{ recommandation.plat.image }}"><img alt="{{ recommandation.plat.name }}" src="{{ recommandation.plat.image }}"></a>
+                        <div class="caption">
+                            <h3>{{ recommandation.plat.name }}</h3>
+                            <p>{{ recommandation.description }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
-                    <div class="caption">
-                        <h3>Steack Frites</h3>
-                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a data-lightbox="recommandations" data-title="Steack" href="/public/images/steack.jpg"><img alt="Steack" src="/public/images/steack.jpg"></a>
-                    <div class="caption">
-                        <h3>Steack Frites</h3>
-                        <p>Venez déguster ce succulent steack provenant de l'un des meilleurs bouché de la région, accompagné de nos pommes frites maison!</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     {% endblock %}
