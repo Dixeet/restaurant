@@ -120,6 +120,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'TwigBridge\TwigServiceProvider',
+        'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 	),
 
 	/*

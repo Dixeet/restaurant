@@ -18,8 +18,10 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-        $truc = 'test';
-		return View::make('index');
+        $jumbotrons = Info::where('name', '=', 'jumbotron')->get();
+		return View::make('index', array(
+            'jumbotrons' => $jumbotrons
+        ));
 	}
 
 }

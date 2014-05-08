@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlatsTypesTable extends Migration {
+class CreatePlatsMenusTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,14 @@ class CreatePlatsTypesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('plats_types', function(Blueprint $table)
+		Schema::create('plats_menus', function(Blueprint $table)
 		{
-			$table->increments('id');
+            $table->increments('id');
 
             $table->integer('plat_id');
-            $table->integer('type_id');
+            $table->integer('menu_id');
 
-			$table->timestamps();
+            $table->timestamps();
 		});
 	}
 
@@ -30,7 +30,7 @@ class CreatePlatsTypesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('plats_types');
+		Schema::drop('plats_menus');
 	}
 
 }

@@ -7,8 +7,11 @@
 {% block header %}
     <div id="slideshow">
         <ul class="bxslider">
-            <li><img src="/public/images/01.jpg" /></li>
-            <li><img src="/public/images/02.jpg" /></li>
+            {% for jumbotron in jumbotrons %}
+                <li><img src="{{ jumbotron.data }}" /></li>
+            {% endfor %}
+            {#<li><img src="/public/images/01.jpg" /></li>#}
+            {#<li><img src="/public/images/02.jpg" /></li>#}
         </ul>
     </div>
     <nav class="navbar navbar-default" role="navigation">
