@@ -18,6 +18,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+        $truc = 'test';
 		return View::make('index');
 	}
 
