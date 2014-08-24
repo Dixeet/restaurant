@@ -1,24 +1,20 @@
-## Laravel PHP Framework
+# MEAN Stack Single Page Application Starter
 
-[![Build Status](https://img.shields.io/travis/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Version](https://img.shields.io/github/tag/laravel/framework.svg)](https://github.com/laravel/framework/releases)
-[![Dependency Status](https://www.versioneye.com/php/laravel:framework/badge.svg)](https://www.versioneye.com/php/laravel:framework)
+This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+## Installation
+1. Download the repository
+2. Install npm modules: `npm install`
+3. Install bower dependencies `bower install`
+4. Start up the server: `node server.js`
+5. View in browser at http://localhost:8080
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+Use this starter kit to build any MEAN stack application you like.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+If you have any questions or requests, email us at [chris@scotch.io](mailto:chris@scotch.io) and we'll keep updating this to make it perfect.
 
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## Future Additions
+- CRUD examples
+- Development and Production Environments
+- Link examples
+- Single Page AngularJS Animations
